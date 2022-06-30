@@ -1,1 +1,7 @@
 theme: jekyll-theme-midnight
+
+title: "Software Engineering for Intergrated Systems"
+descrition: "By Nils Lenaerts"
+baseurl: "/seis-nilslenaerts"
+url: "https://nilslenaerts.github.io"
+
