@@ -53,7 +53,7 @@ void Vm::loadFile(std::string path)
 
 void Vm::readTypeSection() 
 {
-	byteStream.readUInt32(); //skip section size
+	int length = byteStream.readUInt32(); //section size
 	int typeCount = byteStream.readUInt32();
 	for (int i = 0; i < typeCount; i++) {
 
