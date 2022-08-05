@@ -29,4 +29,6 @@ class ByteStream {
 
         void seek(int offset);
 
+        bool atEnd();
+
 };

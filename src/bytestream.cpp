@@ -112,3 +112,7 @@ uint64_t ByteStream::readUInt64()
 void ByteStream::seek(int offset){
     currentByteIndex += offset;
 }
+
+bool ByteStream::atEnd(){
+    return currentByteIndex >= buffer.size();
+}
