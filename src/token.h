@@ -33,7 +33,7 @@ class Character {
         }
 
         static bool isInString(unsigned char candidate){
-            for (int i=0; i < constants::WAT_IDENTIFIERS.length(), ++i){
+            for (int i=0; i < constants::WAT_IDENTIFIERS.size(); ++i){
                 if (candidate == constants::WAT_IDENTIFIERS[i]) return true;
             }
             return false;

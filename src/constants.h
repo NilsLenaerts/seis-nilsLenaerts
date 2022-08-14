@@ -5,5 +5,5 @@
 
 namespace constants{
     // wat identifiers
-    std::vector<char> WAT_IDENTIFIERS = std::vector<char>{'!', '#', '$', '%', '&', '\'', '*', '+', '-', '.', '/', ':', '<', '=', '>', '?', '@', '\\', '^', '_', '`', '|', };
+    std::vector<char> WAT_IDENTIFIERS = {'!', '#', '$', '%', '&', '\'', '*', '+', '-', '.', '/', ':', '<', '=', '>', '?', '@', '\\', '^', '_', '`', '|', };
 }
