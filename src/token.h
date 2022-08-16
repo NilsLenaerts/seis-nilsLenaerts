@@ -24,7 +24,7 @@ class Character {
                 Character::isNumeric(candidate) ||
                 candidate == '.' ||
                 candidate == '_'
-                || isInString(candidate);
+                || isInIdentifierList(candidate);
         }
 
         // [0-9]
@@ -32,7 +32,7 @@ class Character {
             return (candidate >= '0' && candidate <= '9');
         }
 
-        static bool isInString(unsigned char candidate){
+        static bool isInIdentifierList(unsigned char candidate){
             for (int i=0; i < constants::WAT_IDENTIFIERS.size(); ++i){
                 if (candidate == constants::WAT_IDENTIFIERS[i]) return true;
             }
