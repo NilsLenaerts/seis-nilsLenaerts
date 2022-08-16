@@ -158,3 +158,16 @@ void Lexer::parseLineComment(){
         byteStream.seek(1);
     }
 }
+
+void Lexer::printTokens()
+{
+	for (Token token : tokens) {
+		TokenType tokentype = token.type;
+		if (token.type == TokenType::NUMBER) {
+			std::cout << std::setw(20) << std::left << token.getTokenType()   << token.uint32_value<<"\n";
+		}
+		else {
+			std::cout << std::setw(20) << std::left << token.getTokenType()  << token.string_value << "\n";
+		}
+	}
+}
