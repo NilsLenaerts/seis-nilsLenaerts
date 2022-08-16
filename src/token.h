@@ -1,4 +1,5 @@
 //based on example provided on toledo
+#pragma once
 #include "bytestream.h"
 #include "constants.h"
 #include <cstdint>
@@ -62,4 +63,22 @@ public:
 
     std::string string_value;
     uint32_t uint32_value;
+
+    std::string getTokenType(){
+        switch (type)
+        {
+        case TokenType::BRACKETS_CLOSED:
+            return "BRACKETS_CLOSED";
+        case TokenType::BRACKETS_OPEN:
+            return "BACKETS_OPEN";
+        case TokenType::KEYWORD:
+            return "KEYWORD";
+        case TokenType::NUMBER:
+            return "NUMBER";
+        case TokenType::STRING:
+            return "STRING";
+        default:
+            return "";
+        }
+    }
 };
