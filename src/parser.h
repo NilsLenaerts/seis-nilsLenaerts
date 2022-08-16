@@ -1,18 +1,17 @@
 #pragma once
 
+#include "lexer.h"
+#include "instruction.h"
+
 class Parser
 {
 private:
-    /* data */
+    Lexer *lexer;
+
 public:
-    Parser(/* args */);
-    ~Parser();
+	Parser(Lexer *lexer) : lexer(lexer) {}
+    ~Parser() {}
+    
+    ByteStream* parseSimple();
+    std::vector<Instruction*> parseProper();
 };
-
-Parser::Parser(/* args */)
-{
-}
-
-Parser::~Parser()
-{
-}
