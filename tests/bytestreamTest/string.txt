@@ -1,0 +1,1 @@
+"hello with \"escape \n lalala\" en ook nog eens een tab \t over hier, 10\\5 \a = 2"
