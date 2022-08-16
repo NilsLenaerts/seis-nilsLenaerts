@@ -2,6 +2,7 @@
 
 #include "bytestream.h"
 #include "token.h"
+#include <iomanip>
 
 class Lexer
 {
@@ -17,7 +18,9 @@ private:
 public:
     Lexer(std::string path);
     Lexer(std::vector<uint8_t> stream);
-    ~Lexer();
+
+    void printTokens();
+    std::vector<Token> getTokens() {return this->tokens;}
 
     int lex();
 };
