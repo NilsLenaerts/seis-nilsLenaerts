@@ -1,5 +1,5 @@
 title = "SEIS blog by Nils Lenaerts"
-baseURL = "https://nilslenaerts.github.io"
+baseURL = "https://nilslenaerts.github.io/seis-nilslenaerts"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
@@ -12,7 +12,7 @@ enableRobotsTXT = true
 
 [languages]
   [languages.en]
-    title = "Ananke"
+    title = "SEIS-Blog"
     weight = 1
     contentDir = "content/en"
 
@@ -32,5 +32,5 @@ enableRobotsTXT = true
   recent_posts_number = 5
 
 [[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/GoHugoIO"
+name = "github"
+url = "https://github.com/NilsLenaerts/seis-nilslenaerts"
