@@ -11,4 +11,13 @@ include_directories(src)
 add_executable(seis-nilslenaerts
             src/bytestream.cpp
             src/bytestream.h
-)
+            src/compiler.cpp
+            src/compiler.h
+            src/constants.h
+            src/instruction.h
+            src/lexer.cpp
+            src/lexer.h
+            src/parser.cpp
+            src/parser.h
+            src/token.h
+            )

@@ -1,6 +1,7 @@
 #pragma once
 #include "bytestream.h"
-#include "instructions.h"
+#include "constants.h"
+#include <stack>
 #include <string>
 
 class Vm
@@ -8,6 +9,7 @@ class Vm
 public:
 	Vm();
 	void loadFile(std::string path);
+	std::stack<u_int32_t> uInt32Stack;
 private:
 	ByteStream byteStream;
 

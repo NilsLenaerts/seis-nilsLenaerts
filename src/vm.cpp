@@ -9,40 +9,40 @@ void Vm::loadFile(std::string path)
 {
 	byteStream = ByteStream{ path };
 	byteStream.seek(8); //skip webassembly magic number and version number
-	Instructions section;
+	uint8_t section;
 	while (!byteStream.atEnd()) {
-		section = (Instructions)byteStream.readByte();
+		section = byteStream.readByte();
 		switch (section)
 		{
-		case Instructions::custom:
+		case constants::CUSTOM_SECTION:
 			//custom section
             std::cout << "Custom section, do nothing" << std::endl;
 			break;
-		case Instructions::type:
+		case constants::TYPE_SECTION:
 			readTypeSection();
 			break;
-		case Instructions::import:
+		case constants::IMPORT_SECTION:
 			readImportSection();
 			break;
-		case Instructions::function:
+		case constants::FUNCTION_SECTION:
 			readFuncSection();
 			break;
-		case Instructions::table:
+		case constants::TABLE_SECTION:
 			//table section not neccessary
 			break;
-		case Instructions::memory:
+		case constants::MEMORY_SECTION:
 			readMemorySection();
 			break;
-		case Instructions::global:
+		case constants::GLOBAL_SECTION:
 			//global section
 			break;
-		case Instructions::code:
+		case constants::CODE_SECTION:
 			readCodeSection();
 			break;
-		case Instructions::data:
+		case constants::DATA_SECTION:
 			readDataSection();
 			break;
-		case Instructions::datacount:
+		case constants::DATACOUNT_SECTION:
 			readDataCountSection();
 			break;
 		default:

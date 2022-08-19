@@ -1,0 +1,20 @@
+Github repository: https://github.com/NilsLenaerts/seis-nilslenaerts
+Blog site: https://nilslenaerts.github.io/seis-nilslenaerts/
+
+-------------------------------
+
+Task1: wasm vm
+
+enkel een werkende bytestream.
+
+-------------------------------
+
+taak 2: WAT-parser
+
+werkende lexer 
+
+-------------------------------
+
+taak 3: WASM at the edge
+
+Niet gemaakt.
