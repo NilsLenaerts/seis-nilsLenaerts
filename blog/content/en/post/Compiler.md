@@ -4,6 +4,7 @@ description: "WAT?"
 date: 2022-08-18T15:13:10+02:00
 featured_image: ""
 disable_share: true
+tags: []
 ---
 
 To be able to run WebAssebly we first have to compile the WebAssembly text file to a WebAssembly binary. To be able to do this we will be writing our own basic compiler from scratch which will translate WebAssembly WAT files to WASM files. 
@@ -71,3 +72,4 @@ a token can either be:
 ## the actual lexer
 
 for the lexer to do its job it needs to be able to read characters from a file. to do this we will re-use the [byteStream](https://github.com/NilsLenaerts/seis-nilslenaerts/blob/main/src/bytestream.cpp) we made for the VM. 
+
